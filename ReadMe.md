@@ -19,6 +19,32 @@ docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/opt/g
 ```
 To stop the network do `./stop.sh` and if needed go `./teardown.sh`
 
+## Add peer
+https://medium.com/@wahabjawed/extending-hyperledger-fabric-network-adding-a-new-peer-4f52f70a7217
+
+export CHANNEL_NAME=mychannel
+export ORDERER_CA=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/safegold.com/orderers/orderer.safegold.com/msp/tlscacerts/tlsca.safegold.com-cert.pem
+echo $CHANNEL_NAME
+echo $ORDERER_CA
+
+
+peer channel fetch config config_block.pb -o orderer.safegold.com:7050 -c $CHANNEL_NAME --tls --cafile $ORDERER_CA
+
+update peer count in crypto-config.yaml
+
+CORE_PEER_LOCALMSPID="Org1MSP"
+CORE_PEER_TLS_ROOTCERT_FILE=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.safegold.com/peers/peer0.org1.safegold.com/tls/ca.crt
+CORE_PEER_MSPCONFIGPATH=/opt/gopath/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.safegold.com/users/Admin@org1.safegold.com/msp
+CORE_PEER_ADDRESS=peer0.org1.safegold.com:7051
+
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org1.safegold.com/msp" peer1.org1.safegold.com peer channel create -o orderer.safegold.com:7050 -c mychannel -f /etc/hyperledger/configtx/channel.tx
+
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org1.safegold.com/msp" peer1.org1.safegold.com peer channel join -b mychannel.block
+
+//Join peer1.org1.example.com to the channel.
+
+docker exec -e "CORE_PEER_LOCALMSPID=Org1MSP" -e "CORE_PEER_MSPCONFIGPATH=/etc/hyperledger/msp/users/Admin@org1.safegold.com/msp" -e "CORE_PEER_ADDRESS=peer1.org1.safegold.com:7051" peer0.org1.safegold.com peer channel join -b mychannel.block
+
 ## Bootstrap via APIs
 TODO:
 
