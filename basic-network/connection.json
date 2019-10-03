@@ -1,0 +1,52 @@
+{
+    "name": "basic-network",
+    "version": "1.0.0",
+    "client": {
+        "organization": "Org1",
+        "connection": {
+            "timeout": {
+                "peer": {
+                    "endorser": "300"
+                },
+                "orderer": "300"
+            }
+        }
+    },
+    "channels": {
+        "mychannel": {
+            "orderers": [
+                "orderer.org1.safegold.com"
+            ],
+            "peers": {
+                "peer0.org1.safegold.com": {}
+            }
+        }
+    },
+    "organizations": {
+        "Org1": {
+            "mspid": "Org1MSP",
+            "peers": [
+                "peer0.org1.safegold.com"
+            ],
+            "certificateAuthorities": [
+                "ca.org1.safegold.com"
+            ]
+        }
+    },
+    "orderers": {
+        "orderer.org1.safegold.com": {
+            "url": "grpc://localhost:7050"
+        }
+    },
+    "peers": {
+        "peer0.org1.org1.safegold.com": {
+            "url": "grpc://localhost:7051"
+        }
+    },
+    "certificateAuthorities": {
+        "ca.org1.safegold.com": {
+            "url": "http://localhost:7054",
+            "caName": "ca.org1.safegold.com"
+        }
+    }
+}
