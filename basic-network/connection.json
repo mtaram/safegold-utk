@@ -29,7 +29,7 @@
                 "peer0.org1.safegold.com"
             ],
             "certificateAuthorities": [
-                "ca.org1.safegold.com"
+                "ca.safegold.com"
             ]
         }
     },
@@ -39,14 +39,14 @@
         }
     },
     "peers": {
-        "peer0.org1.org1.safegold.com": {
+        "peer0.org1.safegold.com": {
             "url": "grpc://localhost:7051"
         }
     },
     "certificateAuthorities": {
-        "ca.org1.safegold.com": {
+        "ca.safegold.com": {
             "url": "http://localhost:7054",
-            "caName": "ca.org1.safegold.com"
+            "caName": "ca.safegold.com"
         }
     }
 }

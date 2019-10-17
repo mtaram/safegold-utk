@@ -20,7 +20,7 @@ async function main() {
     try {
 
         // Create a new CA client for interacting with the CA.
-        const caURL = ccp.certificateAuthorities['ca.example.com'].url;
+        const caURL = ccp.certificateAuthorities['ca.safegold.com'].url;
         const ca = new FabricCAServices(caURL);
 
         // Create a new file system based wallet for managing identities.
