@@ -10,6 +10,11 @@ set -ev
 # don't rewrite paths for Windows Git Bash users
 export MSYS_NO_PATHCONV=1
 
+#set COMPOSE_PROJECT_NAME
+export COMPOSE_PROJECT_NAME=net
+#check COMPOSE_PROJECT_NAME
+echo "COMPOSE_PROJECT_NAME is set to ${COMPOSE_PROJECT_NAME}"
+
 docker-compose -f docker-compose.yml down
 
 docker-compose -f docker-compose.yml up -d ca.safegold.com orderer.safegold.com peer0.org1.safegold.com couchdb cli

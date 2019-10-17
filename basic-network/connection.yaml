@@ -20,14 +20,14 @@ organizations:
         peers:
         - peer0.org1.safegold.com
         certificateAuthorities:
-        - ca.org1.safegold.com
+        - ca.safegold.com
 orderers:
-    orderer.org1.safegold.com:
+    orderer.safegold.com:
         url: grpc://localhost:7050
 peers:
     peer0.org1.safegold.com:
         url: grpc://localhost:7051
 certificateAuthorities:
-    ca.org1.safegold.com:
+    ca.safegold.com:
         url: http://localhost:7054
-        caName: ca.org1.safegold.com
+        caName: ca.safegold.com

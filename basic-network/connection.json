@@ -15,7 +15,7 @@
     "channels": {
         "mychannel": {
             "orderers": [
-                "orderer.org1.safegold.com"
+                "orderer.safegold.com"
             ],
             "peers": {
                 "peer0.org1.safegold.com": {}
@@ -34,7 +34,7 @@
         }
     },
     "orderers": {
-        "orderer.org1.safegold.com": {
+        "orderer.safegold.com": {
             "url": "grpc://localhost:7050"
         }
     },

@@ -16,6 +16,10 @@ starttime=$(date +%s)
 if [ ! -d ~/.hfc-key-store/ ]; then
 	mkdir ~/.hfc-key-store/
 fi
+#set COMPOSE_PROJECT_NAME
+export COMPOSE_PROJECT_NAME=net
+#check COMPOSE_PROJECT_NAME
+echo "COMPOSE_PROJECT_NAME is set to ${COMPOSE_PROJECT_NAME}"
 
 # launch network; create channel and join peer to channel
 cd ./basic-network
