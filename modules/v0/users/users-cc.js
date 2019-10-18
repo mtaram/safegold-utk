@@ -15,7 +15,7 @@ const wallet = new FileSystemWallet(walletPath);
 const registerNewUser = async (req, res, next) => {
   let gateway = new Gateway
   console.log(ccp);
-  await gateway.connect(ccp, { wallet, identity: 'admin', discovery: { enabled: false } });
+  await gateway.connect(ccp, { wallet, identity: 'user1', discovery: { enabled: false } });
   const network = await gateway.getNetwork('mychannel');
   const contract = network.getContract('safeGold');
   try {

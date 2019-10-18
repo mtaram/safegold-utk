@@ -6,7 +6,7 @@
 #
 # Exit on first error, print all commands.
 set -e
-
+export COMPOSE_PROJECT_NAME=net
 # Shut down the Docker containers for the system tests.
 docker-compose -f docker-compose.yml kill && docker-compose -f docker-compose.yml down
 
