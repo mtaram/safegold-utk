@@ -17,7 +17,7 @@ echo "COMPOSE_PROJECT_NAME is set to ${COMPOSE_PROJECT_NAME}"
 
 docker-compose -f docker-compose.yml down
 
-docker-compose -f docker-compose.yml up -d ca.safegold.com orderer.safegold.com peer0.org1.safegold.com couchdb cli
+docker-compose -f docker-compose-restore.yml up -d ca.safegold.com orderer.safegold.com peer0.org1.safegold.com couchdb cli
 docker ps -a
 
 # wait for Hyperledger Fabric to start

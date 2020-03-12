@@ -1,0 +1,123 @@
+=============== Mar 12, 2020 (UTC) ===============
+07:55:51.708951 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+07:55:51.711732 db@open opening
+07:55:51.712069 version@stat F·[] S·0B[] Sc·[]
+07:55:51.713346 db@janitor F·2 G·0
+07:55:51.713377 db@open done T·1.619712ms
+=============== Mar 12, 2020 (UTC) ===============
+07:56:50.405137 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+07:56:50.405489 version@stat F·[] S·0B[] Sc·[]
+07:56:50.405535 db@open opening
+07:56:50.405737 journal@recovery F·1
+07:56:50.406286 journal@recovery recovering @1
+07:56:50.408008 memdb@flush created L0@2 N·4 S·190B "tes..nfo,v2":"tes..\x00n\x00,v4"
+07:56:50.408584 version@stat F·[1] S·190B[190B] Sc·[0.25]
+07:56:50.417770 db@janitor F·3 G·0
+07:56:50.417821 db@open done T·12.229826ms
+=============== Mar 12, 2020 (UTC) ===============
+08:05:41.636028 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+08:05:41.636362 version@stat F·[1] S·190B[190B] Sc·[0.25]
+08:05:41.636393 db@open opening
+08:05:41.636515 journal@recovery F·1
+08:05:41.636716 journal@recovery recovering @3
+08:05:41.638555 memdb@flush created L0@5 N·1 S·139B "tes..nfo,v6":"tes..nfo,v6"
+08:05:41.638989 version@stat F·[2] S·329B[329B] Sc·[0.50]
+08:05:41.643016 db@janitor F·4 G·0
+08:05:41.643074 db@open done T·6.659519ms
+=============== Mar 12, 2020 (UTC) ===============
+08:10:41.918272 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+08:10:41.918563 version@stat F·[2] S·329B[329B] Sc·[0.50]
+08:10:41.918594 db@open opening
+08:10:41.918679 journal@recovery F·1
+08:10:41.918931 journal@recovery recovering @6
+08:10:41.920631 memdb@flush created L0@8 N·8 S·257B "myc..nfo,v10":"tes..n\x01\x01,v14"
+08:10:41.921169 version@stat F·[3] S·586B[586B] Sc·[0.75]
+08:10:41.924742 db@janitor F·5 G·0
+08:10:41.924776 db@open done T·6.161477ms
+=============== Mar 12, 2020 (UTC) ===============
+08:17:59.689793 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+08:17:59.690090 version@stat F·[3] S·586B[586B] Sc·[0.75]
+08:17:59.690121 db@open opening
+08:17:59.690205 journal@recovery F·1
+08:17:59.690447 journal@recovery recovering @9
+08:17:59.692471 memdb@flush created L0@11 N·17 S·349B "myc..nfo,v31":"tes..nfo,v18"
+08:17:59.692756 version@stat F·[4] S·935B[935B] Sc·[1.00]
+08:17:59.696428 db@janitor F·6 G·0
+08:17:59.696462 db@open done T·6.320587ms
+08:17:59.696486 table@compaction L0·4 -> L1·0 S·935B Q·34
+08:17:59.698269 table@build created L1@14 N·12 S·323B "myc..nfo,v31":"tes..n\x01\x01,v14"
+08:17:59.698317 version@stat F·[0 1] S·323B[0B 323B] Sc·[0.00 0.00]
+08:17:59.700156 table@compaction committed F-3 S-612B Ke·0 D·18 T·3.561678ms
+08:17:59.700252 table@remove removed @11
+08:17:59.700328 table@remove removed @8
+08:17:59.700398 table@remove removed @5
+08:17:59.700468 table@remove removed @2
+=============== Mar 12, 2020 (UTC) ===============
+08:36:26.411076 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+08:36:26.411387 version@stat F·[0 1] S·323B[0B 323B] Sc·[0.00 0.00]
+08:36:26.411419 db@open opening
+08:36:26.411503 journal@recovery F·1
+08:36:26.411838 journal@recovery recovering @12
+08:36:26.413542 memdb@flush created L0@15 N·5 S·221B "myc..nfo,v37":"tes..nfo,v36"
+08:36:26.414102 version@stat F·[1 1] S·544B[221B 323B] Sc·[0.25 0.00]
+08:36:26.418010 db@janitor F·4 G·0
+08:36:26.418040 db@open done T·6.599931ms
+=============== Mar 12, 2020 (UTC) ===============
+08:39:26.067764 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+08:39:26.068066 version@stat F·[1 1] S·544B[221B 323B] Sc·[0.25 0.00]
+08:39:26.068209 db@open opening
+08:39:26.068479 journal@recovery F·1
+08:39:26.068756 journal@recovery recovering @16
+08:39:26.070699 memdb@flush created L0@18 N·2 S·166B "myc..nfo,v41":"tes..nfo,v42"
+08:39:26.071327 version@stat F·[2 1] S·710B[387B 323B] Sc·[0.50 0.00]
+08:39:26.075527 db@janitor F·5 G·0
+08:39:26.075572 db@open done T·7.28448ms
+=============== Mar 12, 2020 (UTC) ===============
+08:45:33.851206 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+08:45:33.851596 version@stat F·[2 1] S·710B[387B 323B] Sc·[0.50 0.00]
+08:45:33.851642 db@open opening
+08:45:33.851767 journal@recovery F·1
+08:45:33.852112 journal@recovery recovering @19
+08:45:33.854019 memdb@flush created L0@21 N·5 S·220B "myc..nfo,v46":"tes..nfo,v45"
+08:45:33.854344 version@stat F·[3 1] S·930B[607B 323B] Sc·[0.75 0.00]
+08:45:33.860710 db@janitor F·6 G·0
+08:45:33.860755 db@open done T·9.084827ms
+=============== Mar 12, 2020 (UTC) ===============
+08:50:38.137424 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+08:50:38.138041 version@stat F·[3 1] S·930B[607B 323B] Sc·[0.75 0.00]
+08:50:38.138100 db@open opening
+08:50:38.138309 journal@recovery F·1
+08:50:38.138873 journal@recovery recovering @22
+08:50:38.141776 memdb@flush created L0@24 N·8 S·255B "myc..nfo,v55":"tes..nfo,v51"
+08:50:38.142249 version@stat F·[4 1] S·1KiB[862B 323B] Sc·[1.00 0.00]
+08:50:38.146564 db@janitor F·7 G·0
+08:50:38.146628 db@open done T·8.485478ms
+08:50:38.146669 table@compaction L0·4 -> L1·1 S·1KiB Q·58
+08:50:38.150708 table@build created L1@27 N·16 S·380B "myc..nfo,v55":"tes..n\x01\x01,v14"
+08:50:38.150827 version@stat F·[0 1] S·380B[0B 380B] Sc·[0.00 0.00]
+08:50:38.152190 table@compaction committed F-4 S-805B Ke·0 D·16 T·5.351987ms
+08:50:38.157662 table@remove removed @24
+08:50:38.157930 table@remove removed @21
+08:50:38.158113 table@remove removed @18
+08:50:38.158318 table@remove removed @15
+08:50:38.158509 table@remove removed @14
+=============== Mar 12, 2020 (UTC) ===============
+09:13:58.506845 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+09:13:58.507505 version@stat F·[0 1] S·380B[0B 380B] Sc·[0.00 0.00]
+09:13:58.507563 db@open opening
+09:13:58.507677 journal@recovery F·1
+09:13:58.507847 journal@recovery recovering @25
+09:13:58.509499 memdb@flush created L0@28 N·5 S·224B "myc..nfo,v61":"tes..nfo,v60"
+09:13:58.509961 version@stat F·[1 1] S·604B[224B 380B] Sc·[0.25 0.00]
+09:13:58.514722 db@janitor F·4 G·0
+09:13:58.514781 db@open done T·7.17805ms
+=============== Mar 12, 2020 (UTC) ===============
+09:17:08.884817 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+09:17:08.885326 version@stat F·[1 1] S·604B[224B 380B] Sc·[0.25 0.00]
+09:17:08.885409 db@open opening
+09:17:08.885503 journal@recovery F·1
+09:17:08.885836 journal@recovery recovering @29
+09:17:08.887636 memdb@flush created L0@31 N·5 S·221B "myc..nfo,v67":"tes..nfo,v66"
+09:17:08.888191 version@stat F·[2 1] S·825B[445B 380B] Sc·[0.50 0.00]
+09:17:08.892463 db@janitor F·5 G·0
+09:17:08.892502 db@open done T·7.069451ms
