@@ -100,3 +100,42 @@
 09:17:12.134027 version@stat F·[3 1] S·610B[483B 127B] Sc·[0.75 0.00]
 09:17:12.139342 db@janitor F·6 G·0
 09:17:12.139388 db@open done T·9.196709ms
+=============== Dec 29, 2020 (UTC) ===============
+10:46:10.197267 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+10:46:10.197798 version@stat F·[3 1] S·610B[483B 127B] Sc·[0.75 0.00]
+10:46:10.197849 db@open opening
+10:46:10.197998 journal@recovery F·1
+10:46:10.199787 journal@recovery recovering @26
+10:46:10.201955 memdb@flush created L0@28 N·4 S·155B "myc..l\x00\x00,d53":"myc..l\x00\a,d51"
+10:46:10.213681 version@stat F·[4 1] S·765B[638B 127B] Sc·[1.00 0.00]
+10:46:10.229706 db@janitor F·7 G·0
+10:46:10.231860 db@open done T·33.976593ms
+10:46:10.231911 table@compaction L0·4 -> L1·1 S·765B Q·55
+10:46:10.237201 table@build created L1@31 N·1 S·127B "myc..l\x00\x01,v54":"myc..l\x00\x01,v54"
+10:46:10.237325 version@stat F·[0 1] S·127B[0B 127B] Sc·[0.00 0.00]
+10:46:10.240369 table@compaction committed F-4 S-638B Ke·0 D·19 T·7.070001ms
+10:46:10.240556 table@remove removed @28
+10:46:10.240719 table@remove removed @25
+10:46:10.240865 table@remove removed @22
+10:46:10.242693 table@remove removed @19
+10:46:10.242874 table@remove removed @18
+=============== Dec 29, 2020 (UTC) ===============
+11:06:46.830500 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:06:46.830799 version@stat F·[0 1] S·127B[0B 127B] Sc·[0.00 0.00]
+11:06:46.830829 db@open opening
+11:06:46.830913 journal@recovery F·1
+11:06:46.831128 journal@recovery recovering @29
+11:06:46.832643 memdb@flush created L0@32 N·1 S·126B "myc..l\x00\a,d56":"myc..l\x00\a,d56"
+11:06:46.833038 version@stat F·[1 1] S·253B[126B 127B] Sc·[0.25 0.00]
+11:06:46.836907 db@janitor F·4 G·0
+11:06:46.836936 db@open done T·6.087318ms
+=============== Dec 29, 2020 (UTC) ===============
+11:10:39.859160 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:10:39.859628 version@stat F·[1 1] S·253B[126B 127B] Sc·[0.25 0.00]
+11:10:39.859701 db@open opening
+11:10:39.859840 journal@recovery F·1
+11:10:39.860092 journal@recovery recovering @33
+11:10:39.862088 memdb@flush created L0@35 N·1 S·126B "myc..l\x00\a,d58":"myc..l\x00\a,d58"
+11:10:39.862853 version@stat F·[2 1] S·379B[252B 127B] Sc·[0.50 0.00]
+11:10:39.867258 db@janitor F·5 G·0
+11:10:39.867298 db@open done T·7.569734ms

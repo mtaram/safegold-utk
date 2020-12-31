@@ -100,3 +100,40 @@
 09:17:12.144500 version@stat F·[3 1] S·760B[487B 273B] Sc·[0.75 0.00]
 09:17:12.149012 db@janitor F·6 G·0
 09:17:12.149045 db@open done T·8.810251ms
+=============== Dec 29, 2020 (UTC) ===============
+10:46:10.234028 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+10:46:10.237255 version@stat F·[3 1] S·760B[487B 273B] Sc·[0.75 0.00]
+10:46:10.237313 db@open opening
+10:46:10.237492 journal@recovery F·1
+10:46:10.237930 journal@recovery recovering @26
+10:46:10.242615 memdb@flush created L0@28 N·2 S·155B "myc..l\x00\x00,v33":"myc..\x01\f\x00,v32"
+10:46:10.244857 version@stat F·[4 1] S·915B[642B 273B] Sc·[1.00 0.00]
+10:46:10.251502 db@janitor F·7 G·0
+10:46:10.251557 db@open done T·14.207861ms
+10:46:10.251631 table@compaction L0·4 -> L1·1 S·915B Q·34
+10:46:10.255104 table@build created L1@31 N·14 S·307B "myc..l\x00\x00,v33":"myc..\x01\x02\x00,v8"
+10:46:10.255177 version@stat F·[0 1] S·307B[0B 307B] Sc·[0.00 0.00]
+10:46:10.256424 table@compaction committed F-4 S-608B Ke·0 D·5 T·4.71929ms
+10:46:10.256629 table@remove removed @28
+10:46:10.256792 table@remove removed @25
+10:46:10.256953 table@remove removed @22
+10:46:10.257092 table@remove removed @19
+10:46:10.257231 table@remove removed @18
+=============== Dec 29, 2020 (UTC) ===============
+11:06:46.837323 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:06:46.837622 version@stat F·[0 1] S·307B[0B 307B] Sc·[0.00 0.00]
+11:06:46.837651 db@open opening
+11:06:46.837735 journal@recovery F·1
+11:06:46.837806 journal@recovery recovering @29
+11:06:46.838434 version@stat F·[0 1] S·307B[0B 307B] Sc·[0.00 0.00]
+11:06:46.845891 db@janitor F·3 G·0
+11:06:46.845921 db@open done T·8.250325ms
+=============== Dec 29, 2020 (UTC) ===============
+11:10:39.867733 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+11:10:39.868039 version@stat F·[0 1] S·307B[0B 307B] Sc·[0.00 0.00]
+11:10:39.868070 db@open opening
+11:10:39.868184 journal@recovery F·1
+11:10:39.868258 journal@recovery recovering @32
+11:10:39.868942 version@stat F·[0 1] S·307B[0B 307B] Sc·[0.00 0.00]
+11:10:39.873529 db@janitor F·3 G·0
+11:10:39.873560 db@open done T·5.446939ms
