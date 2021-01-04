@@ -42,7 +42,7 @@ services:
         - ./crypto-config/peerOrganizations/org1.safegold.com/peers/peer1.org1.safegold.com/msp:/etc/hyperledger/msp/peer
         - ./crypto-config/peerOrganizations/org1.safegold.com/users:/etc/hyperledger/msp/users
         - ./config:/etc/hyperledger/configtx
-        - ./backup/orderer:/var/hyperledger/production/orderer
+        - ./backup/peer1:/var/hyperledger/production
     depends_on:
       #- orderer.safegold.com
       - couchdb
